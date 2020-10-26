@@ -51,7 +51,7 @@ def trap(self, height: List[int]) -> int:
             volume += left_max-height[left]
             left += 1
         else:
-            volume += 1 right_max-height[right]
+            volume += right_max-height[right]
             right -= 1
 
     return volume
